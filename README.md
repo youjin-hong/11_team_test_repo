@@ -1,1 +1,3 @@
-# 11_team_test_repo
+# 최종 프로젝트 11팀 프론트 테스트 레포입니다.
+
+git clone 후, 각자의 이름(eg. 각자 깃허브 유저네임 youjin-hong)으로 브랜치 생성 후, 폴더 구조 push 하기
