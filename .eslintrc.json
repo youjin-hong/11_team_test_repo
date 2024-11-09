@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",  // React 추천 규칙 (컴포넌트 이름 대문자로 시작 등)
+    "plugin:react-hooks/recommended", // React Hooks 규칙 (useEffect 의존성 배열 체크 등)
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser", // TypeScript 파싱 설정
+  "parserOptions": {
+    "ecmaVersion": "latest",    // 최신 JavaScript 문법 지원
+    "sourceType": "module",     // import/export 문법 사용
+    "ecmaFeatures": {
+      "jsx": true              // JSX 문법 지원
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"      // React 버전 자동 감지
+    }
+  }
+}
