@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
+import { useChangeLanguage } from './hooks/translation/useChangeLanguage';
+
 const IntroTitle = styled.p`
   font-size: 1.5rem;
   color: #bf4f74;
@@ -16,12 +18,8 @@ const TranslateButton = styled.button`
 `;
 
 function App() {
-  const { t, i18n } = useTranslation();
-
-  // 언어 전환 함수
-  const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
+  const { changeLanguage } = useChangeLanguage(); // 훅을 통해 changeLanguage 가져오기
 
   return (
     <div>
