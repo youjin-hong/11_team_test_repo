@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <p>안녕하세요 홍유진입니다.</p>
+      <p>안녕하세요 홍유진입니다.gkgkgk</p>
     </>
   );
 }
